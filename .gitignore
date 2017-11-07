@@ -2,6 +2,7 @@
 *.cmd
 mvnw
 
+*.log
 *iml
 .idea
 

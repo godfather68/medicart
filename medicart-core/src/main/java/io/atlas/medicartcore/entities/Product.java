@@ -11,8 +11,17 @@ public class Product {
     private Date added_on = new Date();
     private Integer count;
 
-    public Product() {
+    public Product(Integer id, String name, String description, ProductStatus status, Category catagory, Date added_on) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.status = status;
+        this.catagory = catagory;
+        this.added_on = added_on;
         this.count++;
+    }
+
+    public Product() {
     }
 
     public Integer getId() {

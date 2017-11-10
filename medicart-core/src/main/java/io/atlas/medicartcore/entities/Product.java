@@ -1,34 +1,42 @@
 package io.atlas.medicartcore.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class Product {
-    private Integer id;
+    @Id
+    @GeneratedValue
+    @Column(name = "ID")
+    private Long id;
     private String name;
     private String description;
-    private ProductStatus status;
-    private Category catagory;
-    private Date added_on = new Date();
-    private Integer count;
+//    private ProductStatus status;
+//    private Category category;
+//    private Date added_on = new Date();
+//    private Integer count;
 
-    public Product(Integer id, String name, String description, ProductStatus status, Category catagory, Date added_on) {
+    public Product(Long id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.status = status;
-        this.catagory = catagory;
-        this.added_on = added_on;
-        this.count++;
+//        this.status = status;
+//        this.category = category;
+//        this.added_on = added_on;
+//        this.count++;
     }
 
     public Product() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -48,30 +56,30 @@ public class Product {
         this.description = description;
     }
 
-    public ProductStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus() {
-        if(this.count == null)
-            this.status = ProductStatus.IN_STOCK;
-        else
-            this.status = ProductStatus.OUT_OF_STOCK;
-    }
-
-    public Category getCatagory() {
-        return catagory;
-    }
-
-    public void setCatagory(Category catagory) {
-        this.catagory = catagory;
-    }
-
-    public Date getAdded_on() {
-        return added_on;
-    }
-
-    public void setAdded_on(Date added_on) {
-        this.added_on = added_on;
-    }
+//    public ProductStatus getStatus() {
+//        return status;
+//    }
+//
+//    public void setStatus() {
+//        if(this.count == null)
+//            this.status = ProductStatus.IN_STOCK;
+//        else
+//            this.status = ProductStatus.OUT_OF_STOCK;
+//    }
+//
+//    public Category getCatagory() {
+//        return category;
+//    }
+//
+//    public void setCatagory(Category catagory) {
+//        this.category = catagory;
+//    }
+//
+//    public Date getAdded_on() {
+//        return added_on;
+//    }
+//
+//    public void setAdded_on(Date added_on) {
+//        this.added_on = added_on;
+//    }
 }

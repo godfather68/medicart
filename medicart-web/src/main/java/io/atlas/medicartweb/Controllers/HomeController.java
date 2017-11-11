@@ -1,5 +1,6 @@
 package io.atlas.medicartweb.Controllers;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +10,6 @@ public class HomeController {
 
     @RequestMapping()
     public String getMsg() {
-        return msg;
+       return msg;
     }
 }

@@ -1,6 +1,5 @@
-package io.atlas.medicartweb.Controllers;
+package io.atlas.medicartcore.Controllers;
 
-import io.atlas.medicartcore.Repositories.ProductRepository;
 import io.atlas.medicartcore.Services.ProductService;
 import io.atlas.medicartcore.entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,5 @@
-package io.atlas.medicartweb.Controllers;
+package io.atlas.medicartcore.Controllers;
 
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
